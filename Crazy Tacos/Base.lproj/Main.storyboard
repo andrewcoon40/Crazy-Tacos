@@ -30,8 +30,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="tDx-Vi-Xmw"/>
                     <connections>
-                        <outlet property="mapView" destination="fYn-4b-mx5" id="BKW-iw-x6j"/>
-                        <segue destination="r3o-Cc-aIn" kind="show" id="piv-Hm-aI7"/>
+                        <outlet property="mapView" destination="fYn-4b-mx5" id="gjM-H2-gfx"/>
+                        <segue destination="r3o-Cc-aIn" kind="show" identifier="ShowLocationDetailsSegue" id="piv-Hm-aI7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,14 +64,14 @@
                                     <color key="titleColor" red="0.95447319789999996" green="0.2888688412" blue="0.16318136489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onDirectionsButtonTapped:" destination="r3o-Cc-aIn" eventType="touchUpInside" id="AM0-TL-tEg"/>
+                                    <action selector="onDirectionsButtonTapped:" destination="r3o-Cc-aIn" eventType="touchUpInside" id="E02-Xi-oSh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Er-Am-6qS">
                                 <rect key="frame" x="181" y="641" width="56" height="30"/>
                                 <state key="normal" title="Website"/>
                                 <connections>
-                                    <action selector="onWebsiteButtonTapped:" destination="r3o-Cc-aIn" eventType="touchUpInside" id="Vbx-i5-47a"/>
+                                    <action selector="onWebsiteButtonTapped:" destination="r3o-Cc-aIn" eventType="touchUpInside" id="Sqb-4V-lyI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aO-vD-xz0">
@@ -81,7 +81,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.90126757809721281" blue="0.86064631032658268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="BES-RR-bwz" firstAttribute="leading" secondItem="5aO-vD-xz0" secondAttribute="leading" id="1bW-0O-M53"/>
                             <constraint firstItem="Hmt-cp-1BV" firstAttribute="centerX" secondItem="4Er-Am-6qS" secondAttribute="centerX" id="IL2-P9-nVB"/>
@@ -98,9 +99,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="FhZ-Q1-QkO"/>
                     <connections>
-                        <outlet property="addressLabel" destination="5aO-vD-xz0" id="4kN-U4-NuG"/>
-                        <outlet property="nameLabel" destination="BES-RR-bwz" id="yMZ-OL-bw9"/>
-                        <outlet property="phoneLabel" destination="41Y-Dx-iuh" id="DuD-kO-khv"/>
+                        <outlet property="addressLabel" destination="5aO-vD-xz0" id="mTf-AG-PsA"/>
+                        <outlet property="nameLabel" destination="BES-RR-bwz" id="p2X-w6-fMI"/>
+                        <outlet property="phoneLabel" destination="41Y-Dx-iuh" id="x7D-ds-aiB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQE-JZ-X2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
